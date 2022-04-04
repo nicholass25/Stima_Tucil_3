@@ -11,7 +11,7 @@ if(choice == 'Y'):
     print("Masukkan nama file:")
     path_input = str(input())
     cur_path = os.path.dirname(__file__)
-    new_path = os.path.relpath('TUCIL 3\\test\\' + path_input, cur_path)
+    new_path = os.path.relpath('STIMA_TUCIL_3\\test\\' + path_input, cur_path)
     with open(Path(new_path), 'r') as f:
         input_matrix = np.array(
             [[int(num) for num in line.split(' ')] for line in f])
